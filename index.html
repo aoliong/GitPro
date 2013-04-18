@@ -2,6 +2,8 @@
 layout: default
 title: 我的Blog
 ---
+<html>
+<body>
 <h2>{{ page.title }}</h2>
 <p>最新文章</p>
 <ul>
@@ -9,3 +11,5 @@ title: 我的Blog
 　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 　　{% endfor %}
 </ul>
+</body>
+<html>
